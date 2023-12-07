@@ -19,12 +19,13 @@ export const ProjectBox = (props: ProjectPropsType) => {
 };
 
 const StyledProjectBox = styled.div`
-  background-color: beige;
+  background-color: #fff;
   max-width: 992px;
   max-height: 524px;
   height: 100%;
   width: 100%;
   border-radius: 24px;
+  box-shadow: #d8dadd51 0 0 60px;
 `;
 
 const Title = styled.h3``;
