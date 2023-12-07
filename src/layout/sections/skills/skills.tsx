@@ -2,17 +2,18 @@ import React from "react";
 import styled from "styled-components";
 import { FlexWrap } from "../../../component/flexWrap";
 import { Icon } from "../../../component/icon/icon";
+import { StyledTitle } from "../../../component/sectionTitle";
 
 export const Skills = () => {
   return (
     <StyledSkills>
       <StyledTitle>Skills</StyledTitle>
-      <FlexWrap align={"center"} justify={"center"} wrap="wrap" gap="74px">
+      <FlexWrap align={"center"} justify={"space-around"} wrap="wrap" gap="74px">
         <Icon iconId={"vscode"} />
         <Icon iconId={"js"} />
         <Icon iconId={"css"} />
         <Icon iconId={"html"} />
-        <Icon iconId={"greensock"} />
+        <Icon iconId={"greensock"} viewBox={"0 5 130 100"}/>
         <Icon iconId={"redux"} />
         <Icon iconId={"github"} />
         <Icon iconId={"git"} />
@@ -27,7 +28,6 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
 display: flex;
+flex-direction: column;
+align-items: center;
 `;
-const StyledTitle = styled.title`
-    color: #000;
-`
