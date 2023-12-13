@@ -15,10 +15,16 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  width: 100vw;
-  background-color: transparent;
+  max-width: 1200px;
+  width: 100%;
+  padding: 12px 240px;
+  margin: 0 auto;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   z-index: 5;
+  right: 0;
+  left: 0;
+  backdrop-filter:  blur(8px);
 `;

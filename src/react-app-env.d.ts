@@ -8,6 +8,18 @@ declare namespace NodeJS {
     readonly PUBLIC_URL: string;
   }
 }
+declare module '*.ttf'{
+  const src: string;
+  export default src;
+}
+declare module '*.woff'{
+  const src: string;
+  export default src;
+}
+declare module '*.woff2'{
+  const src: string;
+  export default src;
+}
 
 declare module '*.avif' {
   const src: string;

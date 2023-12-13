@@ -12,15 +12,22 @@ export const Menu = (props: { menuItems: Array<string> }) => {
             </li>
           );
         })}
-        </ul>
+      </ul>
     </StyledMenu>
   );
 };
 
 const StyledMenu = styled.nav`
   ul {
+    font-family: "Nunito";
+    font-size: 18px;
     display: flex;
     list-style-type: none;
     gap: 75.72px;
+    li > a{
+      text-decoration: none;
+      color: #25282b;
+      cursor: pointer;
+    }
   }
 `;

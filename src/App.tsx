@@ -5,24 +5,20 @@ import { Main } from "./layout/sections/main/main";
 import { Skills } from "./layout/sections/skills/skills";
 import { Project } from "./layout/sections/project/project";
 import { Contact } from "./layout/sections/contact/contact";
-import { Footer } from "./layout/sections/footer/footer";
-import FooterImg from "./assets/img/footer-wave.svg"
-import PhotoSvg from "./assets/img/Vector.svg"
-
+import { Footer } from "./layout/footer/footer";
 
 function App() {
+  
   return (
     <StyledApp className="App">
-      {/* <PhotoWave src={PhotoSvg}/> */}
       <BlockContainer>
         <Header />
         <Main />
         <Skills />
-        <Project/>
-        <Contact/>
-        <Footer/>
+        <Project />
+        <Contact />
+        <Footer />
       </BlockContainer>
-<FooterWave src={FooterImg}/>
     </StyledApp>
   );
 }
@@ -31,23 +27,15 @@ export default App;
 
 const BlockContainer = styled.div`
   max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 `;
 const StyledApp = styled.div`
   background-color: #f9faff;
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 20px;
+  padding: 0 20px;
+  overflow: hidden;
 `;
 
-const FooterWave = styled.img`
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-`
-const PhotoWave = styled.img`
-  position: absolute;
-  background-color: yellow;
-
-
-`

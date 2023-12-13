@@ -10,5 +10,9 @@ export const Logo = () => {
 };
 
 const StyledLogo = styled.a`
-   
+   text-decoration: none;
+   color: #25282B;
+   font-family: "Nunito";
+   font-size: 18px;
+   cursor: pointer;
 `

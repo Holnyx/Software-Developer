@@ -1,3 +1,9 @@
+* :focus-visible{
+  outline: solid #f98e02;
+  border-radius: 3px;
+  box-shadow: #f97d02ea 0 0 14px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +17,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* ._visible {
+  transform: translateX(0);
+  transition: all 1s ease;
+  opacity: 1;
+} */
