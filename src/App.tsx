@@ -6,13 +6,13 @@ import { Skills } from "./layout/sections/skills/skills";
 import { Project } from "./layout/sections/project/project";
 import { Contact } from "./layout/sections/contact/contact";
 import { Footer } from "./layout/footer/footer";
+import { BlockContainer } from "./component/container";
 
 function App() {
-  
   return (
     <StyledApp className="App">
+      <Header />
       <BlockContainer>
-        <Header />
         <Main />
         <Skills />
         <Project />
@@ -25,17 +25,10 @@ function App() {
 
 export default App;
 
-const BlockContainer = styled.div`
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-`;
 const StyledApp = styled.div`
   background-color: #f9faff;
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 0 20px;
   overflow: hidden;
 `;
-

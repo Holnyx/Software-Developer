@@ -19,14 +19,14 @@ export const Menu = (props: { menuItems: Array<string> }) => {
 
 const StyledMenu = styled.nav`
   ul {
-    font-family: "Nunito";
-    font-size: 18px;
+    font-family: "Poppins";
+    font-size: 16px;
     display: flex;
     list-style-type: none;
-    gap: 75.72px;
-    li > a{
-      text-decoration: none;
-      color: #25282b;
+    gap: 76px;
+    li > a {
+      color: #000;
+      font-weight: 700;
       cursor: pointer;
     }
   }

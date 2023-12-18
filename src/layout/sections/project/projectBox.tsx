@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React from "react";
 import { FlexWrap } from "../../../component/flexWrap";
+import { GridWrap } from "../../../component/gridWrap";
 
 type ProjectPropsType = {
   title: string;
@@ -11,14 +12,16 @@ type ProjectPropsType = {
 export const ProjectBox = (props: ProjectPropsType) => {
   return (
     <StyledProjectBox>
-      <FlexWrap direction="row">
-        <FlexWrap gap="24px" direction="column">
+      <GridWrap templateColumns="1fr 1fr" gap="50px">
+        <FlexWrap gap="24px" direction="column" justify="space-between" wrap="wrap" margin="50px 0">
           <Title>{props.title}</Title>
           <Text>{props.text}</Text>
           <Link href={"#"}>View Project</Link>
         </FlexWrap>
+        <FlexWrap height="524px">
         <Image src={props.src} alt="Project Img"></Image>
-      </FlexWrap>
+        </FlexWrap>
+      </GridWrap>
     </StyledProjectBox>
   );
 };
@@ -27,26 +30,25 @@ const StyledProjectBox = styled.div`
   background-color: #fff;
   max-width: 992px;
   width: 100%;
+  height: 524px;
   border-radius: 24px;
   box-shadow: #d8dadd51 0 0 60px;
-  position: relative;
   overflow: hidden;
   padding-left: 50px;
-  padding-right: 536px;
-  padding: 0 320px 0 50px;
-  margin: 0 auto;
+  
 `;
+  
 
 const Title = styled.h3`
-  margin: 100px 0 0 0;
   font-family: "Playfair";
   font-size: 40px;
+  margin: 0 auto;
 `;
 const Text = styled.p`
   font-size: 18px;
-  margin: 0;
   color: #828282;
-  font-family: "Nunito";
+  font-family: "Poppins";
+  margin: 0 auto;
 `;
 const Link = styled.a`
   height: 44px;
@@ -55,19 +57,19 @@ const Link = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
   color: #25282b;
   border-radius: 24px;
-  font-size: 18px;
-  margin-bottom: 100px;
-  font-family: "Roboto";
+  font-size: 16px;
+  font-family: "Poppins";
+  transition: all 1s ease;
   cursor: pointer;
+  &:hover {
+    border-color: #025aff;
+    transition: all 1s ease;
+    box-shadow: #2f78ff7a 0 0 10px 5px;
+  }
 `;
 const Image = styled.img`
   height: 100%;
-  width: 50%;
-  position: absolute;
-  left: 50%;
   object-fit: cover;
-  /* transform: translateX(20%); */
 `;

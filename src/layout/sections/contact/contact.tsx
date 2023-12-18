@@ -8,12 +8,12 @@ export const Contact = () => {
       <StyledTitle>Contact me</StyledTitle>
       <StyledForm>
         <FieldName>
-          Name
-          <Field />
+          Name*
+          <Field type="name" required/>
         </FieldName>
         <FieldName>
-          Email
-          <Field type="email" />
+          Email*
+          <Field type="email" required/>
         </FieldName>
         <FieldName>
           Message
@@ -54,6 +54,12 @@ const Field = styled.input.attrs(({ type }) => ({
   border: 1px solid #e8ecf4;
   box-sizing: border-box;
   margin-top: 16px;
+  &:user-invalid {
+    border-color: #ff00e6;
+  }
+  &:user-valid{
+    border-color: #2d88ff;
+  }
 `;
 const FieldName = styled.label`
   color: #25282b;
