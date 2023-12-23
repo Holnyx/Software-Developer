@@ -13,10 +13,6 @@ type GridWrapPropsType = {
 
 export const GridWrap = styled.div<GridWrapPropsType>`
   display: grid;
-  flex-direction: ${props => props.direction || "row"};
-  justify-content: ${props => props.justify || "flex-start"};
-  align-items: ${props => props.align || "stretch"};
-  flex-wrap: ${props => props.wrap || "nowrap"};
   gap: ${props => props.gap || "0"};
   align-content: ${props => props.content};
   grid-template-columns: ${props => props.templateColumns};

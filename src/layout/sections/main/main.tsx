@@ -2,19 +2,20 @@ import React from "react";
 import styled from "styled-components";
 import { FlexWrap } from "../../../component/flexWrap";
 import { Button } from "../../../component/button";
-import yellowPoint from "../../../assets/img/test.svg";
-import photoTest from "../../../assets/img/photo.png";
 import { PhotoInPoint, PhotoTest } from "../../../component/photoInPoint";
+import { Theme } from "../../../component/styled/theme";
 
 export const Main = () => {
+  
   return (
+    
     <StyledMain>
       <FlexWrap direction="row">
         <TextContent>
           <h1>Software Developer</h1>
           <span>
             Hello, <br />
-            my name is <strong>Anastasia Smirnova</strong>
+            my name is <br/><b>Anastasia Smirnova</b>
           </span>
           <br />
           <span>
@@ -22,7 +23,7 @@ export const Main = () => {
             career. You can add more information on the about page.
           </span>
           <br />
-          <FlexWrap justify="flex-start" gap="28px">
+          <FlexWrap justify="flex-start" gap="28px" wrap="wrap">
             <Button>Projects</Button>
             <LinkedInStyledButton href="#">LinkedIn</LinkedInStyledButton>
           </FlexWrap>
@@ -33,30 +34,39 @@ export const Main = () => {
   );
 };
 const StyledMain = styled.div`
-  margin: 200px 0 150px 0;
+  margin: 180px 0 150px 0;
+  @media ${Theme.media.mobile} {
+    margin: 120px 0 0px 0;
+  }
 `;
 const TextContent = styled.div`
   max-width: 600px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   gap: 12px;
   position: relative;
   z-index: 2;
+  @media (max-width: 1016px) {
+    max-width: 500px;
+      }
   h1 {
-    color: rgba(11, 137, 255, 1);
+    color: #0b89ff;
     text-transform: uppercase;
     margin: 0;
-    font-size: 20px;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
+    font-size: calc( (100vw - 480px)/(1200 - 480) * (20 - 16) + 16px);
   }
   span {
     font-size: 24px;
     color: #828282;
-    font-family: "Roboto";
-    & > strong {
+    line-height: 150%;
+    font-family: "Poppins";
+    font-size: calc( (100vw - 480px)/(1200 - 480) * (20 - 16) + 16px);
+    & > b {
       background-size: 400% 400%;
       animation: gradient 8s ease-in-out infinite;
       background-color: #0b0eff;
@@ -69,7 +79,8 @@ const TextContent = styled.div`
         #0b0eff
       );
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
       @keyframes gradient {
         0% {
           background-position: 0 50%;
@@ -83,13 +94,12 @@ const TextContent = styled.div`
       }
     }
     &:first-of-type {
-      font-size: 64px;
+      /* font-size: 64px; */
       color: #25282b;
       font-weight: 700;
-    }
-    &:last-of-type {
-      line-height: 36px;
-      font-family: "Poppins";
+      font-family: "Roboto";
+      line-height: 120%;
+      font-size: calc( (100vw - 480px)/(1200 - 480) * (58 - 46) + 46px);
     }
   }
 `;
@@ -105,8 +115,8 @@ const LinkedInStyledButton = styled.a`
   transition: all 1s ease;
   &:hover {
     transition: all 1s ease;
-    border-color: #0288D1;
+    border-color: #0288d1;
     color: #fff;
-    box-shadow: inset #0288D1 0 0 100px 50px;
+    box-shadow: inset #0288d1 0 0 100px 50px;
   }
 `;

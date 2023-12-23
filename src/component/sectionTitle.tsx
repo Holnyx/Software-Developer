@@ -12,8 +12,8 @@ export const StyledTitle = styled.h2`
   
   &::after {
     padding-top: 4px;
-    background: linear-gradient(90deg, rgba(250,11,255,0), #fb0bffd2, rgba(11,145,255,1), #fb0bffd2, rgba(250,11,255,0));
-    width: 100%;
+    background: linear-gradient(90deg, rgba(11,231,255,0.0046612394957983305) 0%, rgba(1,128,255,0.8954175420168067) 50%, rgba(1,128,255,0) 100%);
+    width: 80%;
     border-radius: 2px;
     content: "";
     position: relative;

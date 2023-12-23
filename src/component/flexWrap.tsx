@@ -8,7 +8,9 @@ type FlexWrapPropsType = {
   gap?: string;
   content?: string;
   height?: string;
-  margin?: string
+  margin?: string;
+  width?: string;
+  grow?: string
 };
 
 export const FlexWrap = styled.div<FlexWrapPropsType>`
@@ -19,6 +21,8 @@ export const FlexWrap = styled.div<FlexWrapPropsType>`
   flex-wrap: ${props => props.wrap || "nowrap"};
   gap: ${props => props.gap || "0"};
   align-content: ${props => props.content || "flex-start"};
-  height: ${props => props.height || "auto"};
+  height: ${props => props.height};
+  width: ${props => props.width};
   margin: ${props => props.margin};
+  flex-grow: ${props => props.grow};
 `;
