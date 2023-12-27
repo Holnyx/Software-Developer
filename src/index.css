@@ -1,7 +1,22 @@
-* :focus-visible{
-  outline: solid #f98e02;
+* :focus-visible {
+  outline: solid #a11111;
   border-radius: 3px;
-  box-shadow: #f97d02ea 0 0 14px;
+  box-shadow: #f95402ea 0 0 14px;
+  
+}
+
+input:focus-visible {
+  box-shadow: none;
+}
+
+textarea:focus-visible {
+  box-shadow: none;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #adadad;
 }
 
 body {
@@ -17,6 +32,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 /* ._visible {
   transform: translateX(0);
   transition: all 1s ease;

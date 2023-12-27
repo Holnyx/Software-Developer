@@ -1,18 +1,17 @@
 import styled from "styled-components";
 
 export const StyledTitle = styled.h2`
-  color: #000;
+  color: #D9D9D9;
   text-align: center;
-  margin: 144px 0 80px 0;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 40px;
   line-height: 72px;
-  font-family: "Playfair";
-  
+  font-family: "Castoro";
+  text-transform: uppercase;
+  padding: 30px 0;  
   &::after {
     padding-top: 4px;
-    background-color: #fdc435;
-    width: 70%;
+    background: linear-gradient(90deg, rgba(11,231,255,0.0046612394957983305) 0%, rgba(255, 1, 1, 0.895) 50%, rgba(1,128,255,0) 100%);
+    width: 80%;
     border-radius: 2px;
     content: "";
     position: relative;

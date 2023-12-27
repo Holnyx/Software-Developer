@@ -1,30 +1,23 @@
 import React from "react";
-import styled from "styled-components";
 import { Logo } from "../../component/logo/logo";
-import { Menu } from "../../component/menu/menu";
+import { Menu } from "./menu/menu";
+import { FlexWrap } from "../../component/flexWrap";
+import { BlockContainer } from "../../component/container";
+import { MenuBurger } from "./menuBurger/menuBurger";
+import {S} from "./header_styles"
 
-const items = ["About", "Project", "Contacts"]
 
-export const Header = () => {
+export const Header: React.FC = () => {
   return (
-    <StyledHeader>
+    <S.Header>
+      <BlockContainer>
+      <FlexWrap align="center" justify="space-between" height="56px">
       <Logo />
-      <Menu menuItems = {items}/>
-    </StyledHeader>
+      <Menu />
+      <MenuBurger />
+      </FlexWrap>
+      </BlockContainer>
+    </S.Header>
   );
 };
 
-const StyledHeader = styled.header`
-  max-width: 1200px;
-  width: 100%;
-  padding: 12px 240px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  z-index: 5;
-  right: 0;
-  left: 0;
-  backdrop-filter:  blur(8px);
-`;
