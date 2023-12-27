@@ -36,7 +36,7 @@ const StyledContact = styled.section`
 const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 550px;
   width: 100%;
   gap: 24px;
   button {
@@ -48,7 +48,6 @@ const Field = styled.input.attrs(({ type }) => ({
 }))`
   padding-left: 20px;
   outline: none;
-  max-width: 400px;
   width: 100%;
   height: 40px;
   border-radius: 8px;
