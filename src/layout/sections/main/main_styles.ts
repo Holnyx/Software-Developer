@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 
 
-const Main = styled.div`
+const Main = styled.section`
   margin: 0 0 220px 0;
   padding: 180px 0 0 0;
   @media ${Theme.media.mobile} {

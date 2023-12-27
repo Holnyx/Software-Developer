@@ -6,8 +6,8 @@ export const IconGmail = () => {
   return (
     <SocialIconItem>
       <SocialIconLink href="#">
-        <IconGmailBlack src={IconGmailBW} />
-        <IconGmailCol src={IconGmailColor} />
+        <IconGmailBlack src={IconGmailBW} alt="Gmail Icon"/>
+        <IconGmailCol src={IconGmailColor} alt="Gmail Icon"/>
       </SocialIconLink>
     </SocialIconItem>
   );

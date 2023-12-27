@@ -6,8 +6,8 @@ export const IconLinkedIN = () => {
   return (
     <SocialIconItem>
       <SocialIconLink href="#">
-        <IconLinkedINBW src={IconLinkedBW} />
-        <IconLinkedINColor src={IconLinkedColor} />
+        <IconLinkedINBW src={IconLinkedBW} alt="LinkedIn Icon"/>
+        <IconLinkedINColor src={IconLinkedColor} alt="LinkedIn Icon"/>
       </SocialIconLink>
     </SocialIconItem>
   );

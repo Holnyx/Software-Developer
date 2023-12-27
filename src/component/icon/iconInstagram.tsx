@@ -6,8 +6,8 @@ export const IconInsta = () => {
   return (
     <SocialIconItem>
       <SocialIconLink href="#">
-        <IconInstaBlack src={IconInstaBW} />
-        <IconInstaCol src={IconInstaColor} />
+        <IconInstaBlack src={IconInstaBW} alt="Instagram Icon"/>
+        <IconInstaCol src={IconInstaColor} alt="Instagram Icon"/>
       </SocialIconLink>
     </SocialIconItem>
   );
