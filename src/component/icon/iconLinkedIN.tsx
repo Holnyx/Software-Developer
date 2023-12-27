@@ -22,8 +22,8 @@ const IconLinkedINBW = styled.img`
   }
 `;
 const IconLinkedINColor = styled.img`
-  width: 56px;
-  height: 56px;
+  width: 55px;
+  height: 55px;
   transition: all 0.5s ease;
   &:hover {
     transition: all 0.5s ease;

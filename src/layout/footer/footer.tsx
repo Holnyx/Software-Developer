@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import FooterImg from "../../assets/img/footer-wave.svg";
 import { Theme } from "../../component/styled/theme";
-import { IconInsta } from "./iconInstagram";
-import { IconGmail } from "./iconGmail";
-import { IconLinkedIN } from "./iconLinkedIN";
+import { IconInsta } from "../../component/icon/iconInstagram";
+import { IconGmail } from "../../component/icon/iconGmail";
+import { IconLinkedIN } from "../../component/icon/iconLinkedIN";
+import FooterImg from "../../assets/img/footer-wave.svg";
+
 
 export const Footer = () => {
   return (
@@ -23,7 +24,7 @@ const StyleFooter = styled.footer`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 290px;
+  margin-bottom: 230px;
   @media (max-width: 965px) {
     margin-bottom: 150px;
   }
@@ -42,21 +43,21 @@ const SocialIcons = styled.ul`
   gap: 24px;
   z-index: 2;
   position: static;
-  cursor: pointer;
 `;
 const Copyright = styled.small`
   display: flex;
   justify-content: center;
   font-family: "Nunito";
-  color: #828282;
+  color: #2c2c2c;
   @media ${Theme.media.mobile} {
     font-size: 10px;
   }
 `;
+
 const FooterWave = styled.img`
   position: absolute;
   bottom: 0;
-  z-index: 1;
+  z-index: -1;
   left: 0;
   right: 0;
   width: 100vw;

@@ -7,8 +7,8 @@ import { GridWrap } from "../../../component/gridWrap";
 
 export const Project = () => {
   return (
-    <StyledProject>
-      <StyledTitle>Project</StyledTitle>
+    <StyledProject  id="projects">
+      <StyledTitle>Projects</StyledTitle>
       <GridWrap gap={"40px"} templateColumns="repeat(auto-fit, minmax(min(30rem, 100%), 2fr))">
         <ProjectBox
           title={"Project Name"}
@@ -48,5 +48,4 @@ const StyledProject = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 40px;
 `;

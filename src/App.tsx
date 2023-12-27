@@ -26,7 +26,7 @@ function App() {
 export default App;
 
 const StyledApp = styled.div`
-  background-color: #f9faff;
+  background-color: #0b0b0b;
   display: flex;
   justify-content: center;
   position: relative;

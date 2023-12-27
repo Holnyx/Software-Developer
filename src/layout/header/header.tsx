@@ -3,10 +3,9 @@ import { Logo } from "../../component/logo/logo";
 import { Menu } from "./menu/menu";
 import { FlexWrap } from "../../component/flexWrap";
 import { BlockContainer } from "../../component/container";
-import { MenuBurger } from "./menu/menuBurger";
+import { MenuBurger } from "./menuBurger/menuBurger";
 import {S} from "./header_styles"
 
-const items = ["About","Skills", "Project", "Contacts"]
 
 export const Header: React.FC = () => {
   return (
@@ -14,8 +13,8 @@ export const Header: React.FC = () => {
       <BlockContainer>
       <FlexWrap align="center" justify="space-between" height="56px">
       <Logo />
-      <Menu menuItems = {items}/>
-      <MenuBurger menuItems={items}/>
+      <Menu />
+      <MenuBurger />
       </FlexWrap>
       </BlockContainer>
     </S.Header>

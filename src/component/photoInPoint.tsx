@@ -56,12 +56,7 @@ export const PhotoTest = styled.div`
     width: 976px;
     height: 1176px;
     background: url(${photoTest}) no-repeat 250% 150%,
-      linear-gradient(
-        150deg,
-        rgba(9, 9, 121, 1) 0%,
-        rgba(11, 137, 255, 1) 40%,
-        rgba(246, 0, 255, 1) 100%
-      );
+    linear-gradient(60deg, #440000 20%, rgba(255,0,0,1) 70%, rgba(255,211,0,1) 100%);
     background-size: 120% auto;
     background-repeat: no-repeat;
     background-position: 100% 60%;
@@ -79,7 +74,7 @@ export const PhotoTest = styled.div`
       opacity: 0.3;
     }
     & > g > clipPath > path {
-      transform: scale(1.1, 1.2);
+      transform: scale(1.2, 1.3);
       @media ${Theme.media.tablet} {
         transform: scale(0.7, 0.8);
       }
@@ -90,14 +85,14 @@ export const PhotoTest = styled.div`
     opacity: 0;
     transition: all 1s ease;
     width: 900px;
-    height: 800px;
+    height: 900px;
     position: absolute;
     top: 10%;
     right: 0;
     left: 0;
     border-radius: 50%;
     filter: blur(90px);
-    background: radial-gradient(circle, #fb0bffbe 0%, #0bb2ff 80%);
+    background: radial-gradient(circle, #350000bd 0%, #a00000 80%);
     @media (max-width: 1115px) {
       left: 40%;
       width: 1500px;

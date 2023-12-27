@@ -5,4 +5,5 @@ export const BlockContainer = styled.div`
   width: 100%;
   margin: 0 auto;
   padding: 0 24px;
+  z-index: 2;
 `;

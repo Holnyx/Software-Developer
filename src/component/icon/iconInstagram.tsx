@@ -21,8 +21,8 @@ const IconInstaBlack = styled.img`
   }
 `;
 const IconInstaCol = styled.img`
-  width: 56px;
-  height: 56px;
+  width: 55px;
+  height: 55px;
   &:hover {
     opacity: 1;
     transition: all 0.5s ease;

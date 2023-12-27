@@ -2,9 +2,10 @@ import styled from "styled-components";
 import { StyledTitle } from "../../../component/sectionTitle";
 import { Button } from "../../../component/button";
 
+
 export const Contact = () => {
   return (
-    <StyledContact>
+    <StyledContact id="contacts">
       <StyledTitle>Contact me</StyledTitle>
       <StyledForm>
         <FieldName>
@@ -51,18 +52,19 @@ const Field = styled.input.attrs(({ type }) => ({
   width: 100%;
   height: 40px;
   border-radius: 8px;
-  border: 1px solid #e8ecf4;
+  background-color: #363636;
+  border: 1px solid #171717;
   box-sizing: border-box;
   margin-top: 16px;
   &:user-invalid {
-    border-color: #ff00e6;
+    border-color: #ff0000;
   }
   &:user-valid{
-    border-color: #2d88ff;
+    border-color: #ffb52d;
   }
 `;
 const FieldName = styled.label`
-  color: #25282b;
+  color: #adadad;
   font-family: "Nunito";
   textarea {
     height: 190px;
