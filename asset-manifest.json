@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/Holnyx.github.io/static/css/main.b9723e49.css",
-    "main.js": "/Holnyx.github.io/static/js/main.1f7d3165.js",
-    "static/js/787.25eaef86.chunk.js": "/Holnyx.github.io/static/js/787.25eaef86.chunk.js",
-    "static/media/photo.png": "/Holnyx.github.io/static/media/photo.703e7f0cfdf7236f572f.png",
-    "static/media/PlayfairDisplay.ttf": "/Holnyx.github.io/static/media/PlayfairDisplay.7a2cfeef1dc7ec01b74a.ttf",
-    "static/media/Poppins-Regular.ttf": "/Holnyx.github.io/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
-    "static/media/Roboto-Medium.woff2": "/Holnyx.github.io/static/media/Roboto-Medium.fc0337b9cf1cce2e6e1e.woff2",
-    "static/media/icons-sprite.svg": "/Holnyx.github.io/static/media/icons-sprite.84d51d321b38ad60c0ebe35d4218e787.svg",
-    "static/media/CastoroTitling-Regular.ttf": "/Holnyx.github.io/static/media/CastoroTitling-Regular.f45f61b01ce2c74034ae.ttf",
-    "static/media/Comfortaa.woff": "/Holnyx.github.io/static/media/Comfortaa.7820dd44e92035ccf650.woff",
-    "static/media/Nunito-Regular.woff2": "/Holnyx.github.io/static/media/Nunito-Regular.17d6fb4cbd2d4a010f50.woff2",
-    "static/media/proj2.webp": "/Holnyx.github.io/static/media/proj2.40a30a5da8e7493f6157.webp",
-    "static/media/proj3.webp": "/Holnyx.github.io/static/media/proj3.0e69ad30007438ca08c6.webp",
-    "static/media/instagram-color.svg": "/Holnyx.github.io/static/media/instagram-color.e56b81fec9b6d9974ba32cace9cbcdd6.svg",
-    "static/media/footer-wave.svg": "/Holnyx.github.io/static/media/footer-wave.6489d47f7bf9407a7eb0677c8b739a49.svg",
-    "index.html": "/Holnyx.github.io/index.html",
-    "static/media/gmail-color.svg": "/Holnyx.github.io/static/media/gmail-color.7fe57a6346339056e6e70ea59dfb264e.svg",
-    "static/media/linkedin-color.svg": "/Holnyx.github.io/static/media/linkedin-color.e2239b3ed88b4e990c9381a3423d14ac.svg",
-    "main.b9723e49.css.map": "/Holnyx.github.io/static/css/main.b9723e49.css.map",
-    "main.1f7d3165.js.map": "/Holnyx.github.io/static/js/main.1f7d3165.js.map",
-    "787.25eaef86.chunk.js.map": "/Holnyx.github.io/static/js/787.25eaef86.chunk.js.map"
+    "main.css": "/Software-Developer/static/css/main.b9723e49.css",
+    "main.js": "/Software-Developer/static/js/main.be9aaf83.js",
+    "static/js/787.25eaef86.chunk.js": "/Software-Developer/static/js/787.25eaef86.chunk.js",
+    "static/media/photo.png": "/Software-Developer/static/media/photo.703e7f0cfdf7236f572f.png",
+    "static/media/PlayfairDisplay.ttf": "/Software-Developer/static/media/PlayfairDisplay.7a2cfeef1dc7ec01b74a.ttf",
+    "static/media/Poppins-Regular.ttf": "/Software-Developer/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Roboto-Medium.woff2": "/Software-Developer/static/media/Roboto-Medium.fc0337b9cf1cce2e6e1e.woff2",
+    "static/media/icons-sprite.svg": "/Software-Developer/static/media/icons-sprite.84d51d321b38ad60c0ebe35d4218e787.svg",
+    "static/media/CastoroTitling-Regular.ttf": "/Software-Developer/static/media/CastoroTitling-Regular.f45f61b01ce2c74034ae.ttf",
+    "static/media/Comfortaa.woff": "/Software-Developer/static/media/Comfortaa.7820dd44e92035ccf650.woff",
+    "static/media/Nunito-Regular.woff2": "/Software-Developer/static/media/Nunito-Regular.17d6fb4cbd2d4a010f50.woff2",
+    "static/media/proj2.webp": "/Software-Developer/static/media/proj2.40a30a5da8e7493f6157.webp",
+    "static/media/proj3.webp": "/Software-Developer/static/media/proj3.0e69ad30007438ca08c6.webp",
+    "static/media/instagram-color.svg": "/Software-Developer/static/media/instagram-color.e56b81fec9b6d9974ba32cace9cbcdd6.svg",
+    "static/media/footer-wave.svg": "/Software-Developer/static/media/footer-wave.6489d47f7bf9407a7eb0677c8b739a49.svg",
+    "index.html": "/Software-Developer/index.html",
+    "static/media/gmail-color.svg": "/Software-Developer/static/media/gmail-color.7fe57a6346339056e6e70ea59dfb264e.svg",
+    "static/media/linkedin-color.svg": "/Software-Developer/static/media/linkedin-color.e2239b3ed88b4e990c9381a3423d14ac.svg",
+    "main.b9723e49.css.map": "/Software-Developer/static/css/main.b9723e49.css.map",
+    "main.be9aaf83.js.map": "/Software-Developer/static/js/main.be9aaf83.js.map",
+    "787.25eaef86.chunk.js.map": "/Software-Developer/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b9723e49.css",
-    "static/js/main.1f7d3165.js"
+    "static/js/main.be9aaf83.js"
   ]
 }
