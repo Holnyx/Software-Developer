@@ -17,7 +17,9 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   justify-content: center;
   align-items: center;
   background-color: #0d0d0db8;
-  backdrop-filter: blur(8px);
+  will-change: transform;
+  -webkit-backdrop-filter: blur(8px);
+  -moz-backdrop-filter: blur(8px);
   top: 0;
   left: 120%;
   right: 0;

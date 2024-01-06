@@ -2,7 +2,7 @@
   "name": "portfolio-start",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Holnyx.github.io/Holnyx.github.io",
+  "homepage": "https://Holnyx.github.io/Software-Developer",
   "dependencies": {
     "@babel/core": "7.16.0",
     "@emotion/react": "^11.11.3",
