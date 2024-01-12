@@ -29,7 +29,8 @@ export const PhotoTest = styled.div`
   position: absolute;
   left: 55%;
   top: -6%;
-  z-index: 1;
+  clip-path: url("#cP");
+  -webkit-clip-path: url("#cP");
   @media (max-width: 1350px) {
     left: 50%;
   }
@@ -60,27 +61,23 @@ export const PhotoTest = styled.div`
     background-size: 120% auto;
     background-repeat: no-repeat;
     background-position: 100% 60%;
-    clip-path: url("#cP");
-    transition: 1s;
-    
     @media ${Theme.media.tablet} {
       width: 576px;
       height: 924px;
       background-size: 100% auto;
-
     }
     @media (max-width: 1115px) {
-      transition: 1s;
       opacity: 0.3;
     }
     & > g > clipPath > path {
+      -webkit-transform: scale(1.2, 1.3);
       transform: scale(1.2, 1.3);
       @media ${Theme.media.tablet} {
         transform: scale(0.7, 0.8);
       }
     }
   }
-  &::before {
+  /* &::before {
     content: "";
     opacity: 0;
     transition: all 1s ease;
@@ -91,6 +88,7 @@ export const PhotoTest = styled.div`
     right: 0;
     left: 0;
     border-radius: 50%;
+    -webkit-filter: blur(90px);
     filter: blur(90px);
     background: radial-gradient(circle, #350000bd 0%, #a00000 80%);
     @media (max-width: 1115px) {
@@ -104,9 +102,9 @@ export const PhotoTest = styled.div`
   }
   &:hover::before {
     transition: all 1s ease;
-    opacity: 1;
-    @media (max-width: 1115px) {
+    opacity: 1; */
+    /* @media (max-width: 1115px) {
       transition: 1s;
-    }
-  }
+    } */
+  /* } */
 `;

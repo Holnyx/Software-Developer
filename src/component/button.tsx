@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Theme } from "./styled/theme";
 
 export const Button = styled.button`
   background: linear-gradient(
@@ -16,7 +17,11 @@ export const Button = styled.button`
   cursor: pointer;
   transition: all 1s ease;
   &:hover {
-    transition: all 1s ease;
+    -webkit-filter: drop-shadow( 0 10px 40px rgba(255, 0, 0, 0.818));
     filter: drop-shadow( 0 10px 40px rgba(255, 0, 0, 0.818));
+      }
+      @media ${Theme.media.tablet} {
+        -webkit-filter: drop-shadow( 0 0 30px rgba(255, 0, 0, 0.818));
+    filter: drop-shadow( 0 0 30px rgba(255, 0, 0, 0.818));
       }
 `;

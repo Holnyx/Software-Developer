@@ -10,7 +10,6 @@ export const Skills = () => {
   return (
     <StyledSkills id="skills">
       <StyledTitle>Skills</StyledTitle>
-     
       <FlexWrap
         align={"center"}
         justify={"space-between"}
@@ -19,7 +18,7 @@ export const Skills = () => {
         width="800px"
         margin="60px 0 120px 0"
       >
-        <Fade cascade={true} damping={.4}>
+        <Fade cascade={true} damping={.3} triggerOnce={true}>
         <Icon iconId={"vscode"} />
         <Icon iconId={"js"} viewBox={"0 0 120 120"}/>
         <Icon iconId={"css"} viewBox={"0 0 120 120"}/>
@@ -48,26 +47,35 @@ const StyledSkills = styled.section`
       @media ${Theme.media.mobile} {
         width: 80%;
       }
-      /* -webkit-box-reflect: below -10px linear-gradient(transparent 30%, #ffffff1b 70%, #a4a4a413 100%); */
+      @media (max-width: 260px) {
+        width: 60%;
+        gap: 0;
+      }
       &:hover{
-        -webkit-filter: drop-shadow( 0  10px 50px rgba(255, 0, 0, 0.856));
-        filter: drop-shadow( 0 10px 40px rgba(255, 0, 0, 0.818));
+        /* -webkit-box-reflect: below -10px linear-gradient(transparent 30%, #ffffff1b 70%, #a4a4a413 100%); */
+        /* -webkit-filter: drop-shadow( 0  10px 50px rgba(255, 0, 0, 0.856));
+        filter: drop-shadow( 0 10px 40px rgba(255, 0, 0, 0.818)); */
        
       }
     }
     @media ${Theme.media.tablet} {
         gap: 80px;
         width: 100%;
+        margin: 0;
       }
     @media ${Theme.media.mobile} {
         gap: 30px;
-        width: 100%;
+        width: 120%;
+      }
+      @media (max-width: 260px) {
+        gap: 0;
       }
     @media (max-width:1152px) {
       &:last-child{
         justify-content: center;
       }
     }
+    
   }
 `;
 

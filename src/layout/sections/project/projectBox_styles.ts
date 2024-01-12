@@ -15,28 +15,25 @@ const ProjectBox = styled.div`
     transition: all 1s ease;
     filter: blur(5px);
   } */
-  @media (max-width: 560px) {
-  }
   & > ${FlexWrap} {
-
     @media (max-width: 560px) {
       flex-wrap: wrap-reverse;
+      gap: 30px;
     }
-    @media (max-width: 560px) {
-      gap: 40px;
-    }
+  
     & > ${FlexWrap}:first-of-type {
-      padding: 0 50px;
+      padding: 0 46px;
       @media (max-width: 560px) {
-        width: auto;
+        width: 100%;
         margin: 0;
+        gap: 40px;
       }
     }
     & > ${FlexWrap}:last-of-type {
       overflow: hidden;
       @media (max-width: 560px) {
         height: 218px;
-        width: auto;
+        width: 100%;
       }
     }
   }
@@ -63,7 +60,7 @@ const Text = styled.p`
   @media (max-width: 529px) {
     font-size: 16px;
   }
-  @media (max-width: 422px) {
+  @media (max-width: 452px) {
     font-size: 14px;
   }
   @media (max-width: 362px) {
@@ -89,6 +86,11 @@ const Link = styled.a`
     font-size: 14px;
     height: 40px;
     width: 146px;
+  }
+  @media ${Theme.media.tablet} {
+    border-color: #a40000;
+    transition: all 1s ease;
+    box-shadow: #ff080879 0 0 10px 5px;
   }
   &:hover {
     border-color: #a40000;

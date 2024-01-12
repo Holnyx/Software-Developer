@@ -2,8 +2,6 @@ import { Link } from "react-scroll";
 import styled, { css } from "styled-components";
 import { Theme } from "../../../component/styled/theme";
 
-
-
 const MenuBurger = styled.nav`
   display: none;
   @media ${Theme.media.mobile} {
@@ -13,24 +11,26 @@ const MenuBurger = styled.nav`
 
 const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   position: fixed;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background-color: #0d0d0db8;
   will-change: transform;
   -webkit-backdrop-filter: blur(8px);
-  -moz-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   top: 0;
-  left: 120%;
+  left: 0;
+  /* left: 120%; */
+  transition: opacity 1s;
   right: 0;
   bottom: 0;
-  transition: all 1s ease;
   opacity: 0;
   ${(props) =>
     props.isOpen &&
     css<{ isOpen: boolean }>`
-      transition: all 1s ease;
-      left: 0;
+    display: flex;
+      /* transition: opacity 1s, z-index 1s; */
+      /* left: 0; */
       opacity: 1;
     `}
   ul {
@@ -47,17 +47,23 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     cursor: pointer;
   }
 `;
-const NavLink =styled(Link)`
+const NavLink = styled(Link)`
   color: #740000;
-  transition: all 1s ease;
-  &:hover, &.active{
+  /* transition: all 1s ease; */
+  &:hover,
+  &.active {
     background-image: linear-gradient(180deg, #650000, #ff4d11, #ff9913);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   &::after {
     padding-top: 1.5px;
-    background: linear-gradient(90deg, rgba(11,231,255,0.0046612394957983305) 0%, rgba(255, 1, 1, 0.895) 50%, rgba(1,128,255,0) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(11, 231, 255, 0.0046612394957983305) 0%,
+      rgba(255, 1, 1, 0.895) 50%,
+      rgba(1, 128, 255, 0) 100%
+    );
     width: 100%;
     border-radius: 2px;
     content: "";
@@ -69,10 +75,11 @@ const NavLink =styled(Link)`
     opacity: 0;
     transition: all 1s ease;
   }
-  &:hover::after, &.active::after{
+  &:hover::after,
+  &.active::after {
     opacity: 1;
   }
-`
+`;
 
 const BurgerButton = styled.button<{ isOpen: boolean }>`
   position: fixed;
@@ -97,8 +104,8 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     height: 2px;
     transition: all 1s ease;
     ${(props) =>
-    props.isOpen &&
-    css<{ isOpen: boolean }>`
+      props.isOpen &&
+      css<{ isOpen: boolean }>`
         background-color: transparent;
         transform: translateX(20px);
         transition: all 1s ease;
@@ -113,8 +120,8 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       transform: translateY(-8px);
       transition: all 1s ease;
       ${(props) =>
-    props.isOpen &&
-    css<{ isOpen: boolean }>`
+        props.isOpen &&
+        css<{ isOpen: boolean }>`
           transform: rotate(-45deg) translateY(-10px) translateX(-10px);
           transition: all 1s ease;
         `}
@@ -129,8 +136,8 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       transform: translateY(8px);
       transition: all 1s ease;
       ${(props) =>
-    props.isOpen &&
-    css<{ isOpen: boolean }>`
+        props.isOpen &&
+        css<{ isOpen: boolean }>`
           transform: rotate(45deg) translateY(10px) translateX(-10px);
           transition: all 1s ease;
         `}
@@ -139,8 +146,8 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
 `;
 
 export const S = {
-    MenuBurger,
-    MobileMenuPopup,
-    NavLink,
-    BurgerButton,
-}
+  MenuBurger,
+  MobileMenuPopup,
+  NavLink,
+  BurgerButton,
+};

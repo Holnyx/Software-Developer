@@ -77,7 +77,6 @@ const TextContent = styled.div`
   }
 `;
 const LinkedInStyledButton = styled.a`
-  margin-right: auto;
   padding: 6px 24px;
   border: solid #777 2px;
   border-radius: 8px;
@@ -87,11 +86,20 @@ const LinkedInStyledButton = styled.a`
   font-family: "Poppins";
   transition: all 1s ease;
   &:hover {
-    transition: all .6s ease;
     border-color: #0288d1;
     color: #fff;
-    box-shadow: inset #0288d1 0 0 100px 50px;
+    background-color: #0288d1;
+    /* box-shadow: inset #0288d1 0 0 100px 50px; */
+    -webkit-filter: drop-shadow( 0 10px 30px #0288d1);
     filter: drop-shadow( 0 10px 30px #0288d1);
+  }
+  @media ${Theme.media.tablet} {
+    border-color: #0288d1;
+    color: #fff;
+    background-color: #0288d1;
+    /* box-shadow: inset #0288d1 0 0 100px 50px; */
+    -webkit-filter: drop-shadow( 0 0 30px #0288d1);
+    filter: drop-shadow( 0 0px 30px #0288d1);
   }
 `;
 export const Button = styled(Link)`
@@ -110,8 +118,11 @@ export const Button = styled(Link)`
   cursor: pointer;
   transition: all 1s ease;
   &:hover {
-    transition: all 1s ease;
     filter: drop-shadow( 0 10px 40px rgba(255, 0, 0, 0.818));
+      }
+      @media ${Theme.media.tablet} {
+        -webkit-filter: drop-shadow( 0 0 30px rgba(255, 0, 0, 0.818));
+    filter: drop-shadow( 0 0 30px rgba(255, 0, 0, 0.818));
       }
 `;
 

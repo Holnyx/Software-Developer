@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Theme } from "./styled/theme";
 
 export const StyledTitle = styled.h2`
   color: #D9D9D9;
@@ -7,7 +8,8 @@ export const StyledTitle = styled.h2`
   line-height: 72px;
   font-family: "Castoro";
   text-transform: uppercase;
-  padding: 30px 0;  
+  padding: 30px 0;
+  
   &::after {
     padding-top: 4px;
     background: linear-gradient(90deg, rgba(11,231,255,0.0046612394957983305) 0%, rgba(255, 1, 1, 0.895) 50%, rgba(1,128,255,0) 100%);
