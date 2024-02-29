@@ -1,17 +1,17 @@
 import styled from "styled-components";
-import IconLinkedColor from "../../assets/img/linkedin-color.svg";
+import IconTelegramColor from "../../assets/img/telegram.svg";
 
-export const IconLinkedIN = () => {
+export const IconTelegramC = () => {
   return (
     <SocialIconItem>
-      <SocialIconLink href="#">
-        <IconLinkedINColor src={IconLinkedColor} alt="LinkedIn Icon"/>
+      <SocialIconLink href="https://t.me/Ahacmu" target="_blank">
+        <IconTelegram src={IconTelegramColor} alt="Telegram Icon"/>
       </SocialIconLink>
     </SocialIconItem>
   );
 };
 
-const IconLinkedINColor = styled.img`
+const IconTelegram = styled.img`
   width: 56px;
   height: 56px;
   transition: all 0.5s ease;

@@ -1,26 +1,50 @@
 import styled from "styled-components";
 import { StyledTitle } from "../../../component/sectionTitle";
 import { Button } from "../../../component/button";
+import emailjs from '@emailjs/browser';
+import { ChangeEvent, ElementRef, useRef, useState } from "react";
+
 
 
 export const Contact = () => {
+
+  const form = useRef<ElementRef<'form'>>(null);
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    if (!form.current) return
+
+    emailjs
+      .sendForm('service_nv9z6uq', 'template_wfx9cww', form.current, {
+        publicKey: 'WfhKeXE0sGtB2ej39',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
   return (
     <StyledContact id="contacts">
       <StyledTitle>Contact me</StyledTitle>
-      <StyledForm>
+      <StyledForm ref={form} onSubmit={sendEmail}>
         <FieldName>
           Name*
-          <Field type="name" required/>
+          <Field type="name" required name="user_name" />
         </FieldName>
         <FieldName>
           Email*
-          <Field type="email" required/>
+          <Field type="email" required name="subject" />
         </FieldName>
         <FieldName>
           Message
-          <Field as="textarea" />
+          <Field as="textarea" name="message" />
         </FieldName>
-        <Button type={"submit"}>Send</Button>
+        <Button type={"submit"} typeof="reset" >Send</Button>
       </StyledForm>
     </StyledContact>
   );
@@ -55,6 +79,7 @@ const Field = styled.input.attrs(({ type }) => ({
   border: 1px solid #171717;
   box-sizing: border-box;
   margin-top: 16px;
+  resize: vertical;
   &:user-invalid {
     border-color: #ff0000;
   }

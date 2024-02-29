@@ -11,6 +11,8 @@ type FlexWrapPropsType = {
   margin?: string;
   width?: string;
   grow?: string
+  position?:string
+
 };
 
 export const FlexWrap = styled.div<FlexWrapPropsType>`
@@ -25,4 +27,5 @@ export const FlexWrap = styled.div<FlexWrapPropsType>`
   width: ${props => props.width};
   margin: ${props => props.margin};
   flex-grow: ${props => props.grow};
+  position: ${props => props.position};
 `;

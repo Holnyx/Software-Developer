@@ -4,7 +4,7 @@ import IconInstaColor from "../../assets/img/instagram-color.svg";
 export const IconInsta = () => {
   return (
     <SocialIconItem>
-      <SocialIconLink href="#">
+      <SocialIconLink href="https://www.instagram.com/ahacmu/" target="_blank">
         <IconInstaCol src={IconInstaColor} alt="Instagram Icon" />
       </SocialIconLink>
     </SocialIconItem>

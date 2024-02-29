@@ -4,7 +4,7 @@ import IconGmailColor from "../../assets/img/gmail-color.svg";
 export const IconGmail = () => {
   return (
     <SocialIconItem>
-      <SocialIconLink href="#">
+      <SocialIconLink href="mailto:anastasia.dev.smirnova@gmail.com">
         <IconGmailCol src={IconGmailColor} alt="Gmail Icon"/>
       </SocialIconLink>
     </SocialIconItem>
