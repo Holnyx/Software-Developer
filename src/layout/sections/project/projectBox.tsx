@@ -6,9 +6,12 @@ type ProjectPropsType = {
   title: string;
   text: string;
   src: string;
+  href?: string
+
 };
 
 export const ProjectBox = (props: ProjectPropsType) => {
+
   return (
     <S.ProjectBox>
       <FlexWrap gap="50px">
@@ -22,9 +25,10 @@ export const ProjectBox = (props: ProjectPropsType) => {
         >
           <S.Title>{props.title}</S.Title>
           <S.Text>{props.text}</S.Text>
-          <S.Link href={"#"}>View Project</S.Link>
+          <S.Link href={props.href} target="_blank">View Project</S.Link>
         </FlexWrap>
-        <FlexWrap height="524px">
+        <FlexWrap height="524px" position="relative">
+          <S.TextProgress>IN PROGRESS</S.TextProgress>
           <S.Image src={props.src} alt="Project Img"></S.Image>
         </FlexWrap>
       </FlexWrap>

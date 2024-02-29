@@ -1,7 +1,6 @@
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 import { FlexWrap } from "../../../component/flexWrap";
 import { Theme } from "../../../component/styled/theme";
-
 
 const ProjectBox = styled.div`
   background-color: #1c1c1c;
@@ -20,7 +19,7 @@ const ProjectBox = styled.div`
       flex-wrap: wrap-reverse;
       gap: 30px;
     }
-  
+
     & > ${FlexWrap}:first-of-type {
       padding: 0 46px;
       @media (max-width: 560px) {
@@ -81,6 +80,7 @@ const Link = styled.a`
   transition: all 1s ease;
   cursor: pointer;
   font-size: 16px;
+  opacity: ${props => props.href === undefined ? ".3" : ""};
 
   @media (max-width: 362px) {
     font-size: 14px;
@@ -96,26 +96,39 @@ const Link = styled.a`
     border-color: #a40000;
     transition: all 1s ease;
     box-shadow: #ff080879 0 0 10px 5px;
+    box-shadow: ${props => props.href === undefined ? "none" : ""};
+    border-color: ${props => props.href === undefined ? "#adadad" : ""};
   }
 `;
 const Image = styled.img`
   width: 448px;
   object-fit: cover;
   transition: all 1s ease;
+  filter: blur(4px) grayscale(0.5);
   @media ${Theme.media.tablet} {
     width: 330px;
   }
   @media (max-width: 560px) {
     width: 550px;
-
   }
 `;
-
+const TextProgress = styled.text`
+  position: absolute;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 700;
+  color: #4e4e4e;
+  z-index: 2;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+`;
 
 export const S = {
-    ProjectBox,
-    Title,
-    Text,
-    Link,
-    Image,
-}
+  ProjectBox,
+  Title,
+  Text,
+  Link,
+  Image,
+  TextProgress,
+};

@@ -2,8 +2,9 @@ import styled from "styled-components";
 import { Theme } from "../../component/styled/theme";
 import { IconInsta } from "../../component/icon/iconInstagram";
 import { IconGmail } from "../../component/icon/iconGmail";
-import { IconLinkedIN } from "../../component/icon/iconLinkedIN";
+import { IconTelegramC } from "../../component/icon/iconTelegram";
 import FooterImg from "../../assets/img/footer-wave.svg";
+
 
 
 export const Footer = () => {
@@ -12,9 +13,9 @@ export const Footer = () => {
       <SocialIcons>
         <IconInsta />
         <IconGmail />
-        <IconLinkedIN />
+        <IconTelegramC />
       </SocialIcons>
-      <Copyright>© 2023 Anastasia Smirnova, All Rights Reserved. </Copyright>
+      <Copyright>© 2024 Anastasia Smirnova, All Rights Reserved. </Copyright>
       <FooterWave alt="Gradient Wave" src={FooterImg} />
     </StyleFooter>
   );
